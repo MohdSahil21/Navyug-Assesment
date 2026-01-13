@@ -48,6 +48,9 @@ forward_list<int> add(forward_list<int> l1, forward_list<int> l2) {
     }
 
     l1.reverse();
+    while (l1.front() == 0) {
+    l1.pop_front();
+}
     return l1;
 }
 int main() {
@@ -62,3 +65,4 @@ int main() {
 
     return 0;
 }
+
